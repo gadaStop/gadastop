@@ -1,21 +1,19 @@
 //v0.1.0b1
 
 void draw() {
+  println(frameRate);
 
+  InputMod = 0;
 
-  InputMod = -1;
-
-  if (ServerState==1 && myClient.available()>0) recieveServer();
-
-  if (escmod == 0) menu();
-  else switch(GMod) {
+  switch(GMod) {
 
   case -100:
-    loadS1(); // loading screne, "Click to start"
+    LoadS1(); // loading screne, "Click to start"
   case 100:
-    loadS2();
+    LoadS2();
     break;
 
+  /*
   case -200:
     statM1(); // start menu
   case 200:
@@ -91,8 +89,8 @@ void draw() {
   case 3000:
     help(); // help
     break;
+    */
   }
-  if (StateMod==1) state();
 
   Click=0;
 }

@@ -9,7 +9,7 @@ Main code for Quod client
 =======
 - reference : http://gadastop.ml
 >>>>>>> Stashed changes
-- version info : v0.1.0b2 build1
+- version info : v0.1.0b1 build2
 
 --------
 ## Basic Requirements for Development
